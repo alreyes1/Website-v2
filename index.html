@@ -1,0 +1,703 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Freesbie - User Interface</title>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/demo-slideshow.css">
+  <link rel="stylesheet" href="css/demo-slideshow-mobile.css">
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <!-- <script type="text/javascript" src="js/scrolltopcontrol.js"></script>-->
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <link rel="stylesheet" href="themes/themes.css">
+  <link rel="stylesheet" href="css/demoslide2.css">
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.3.1-min.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+        $("#slider1").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns"
+      });
+
+    });
+  </script>
+  <script type="text/javascript">
+
+$(document).ready(function(e) {
+	
+	if( $(this).width() <=960){
+	  $(".cycle-slideshow, .cycle-prev, .cycle-next").hide();
+	  $(".rslides_container").show();
+	}else{
+		$(".cycle-slideshow, .cycle-prev, .cycle-next").show();
+		$(".rslides_container").hide();
+		}
+	
+    $('.me a').click(function() {
+		
+		//$("#about").toggle({'display': "block"}, 1000, 'easeInOutExpo');
+	if($("#about").hasClass("open")){
+		$("#about").removeClass("open");
+		$("#about").animate({
+
+                    height: '0px'
+					//display: "none"
+                }, {
+                   duration: 1000,
+				   easing: 'easeInOutExpo'
+
+                });
+	}else{
+		$("#about").addClass("open");
+		$("#about").animate({
+
+                    height: '400px'
+					//display: "block"
+                }, {
+                   duration: 1000,
+				   easing: 'easeInOutExpo'
+
+                });
+		
+		}
+
+	
+	});
+	
+$(window).resize(function() {
+  //console.log('width:' + $(this).width());
+  
+	if( $(this).width() <=960){
+	  $(".cycle-slideshow, .cycle-prev, .cycle-next").hide();
+	  $(".rslides_container").show();
+	}else{
+		$(".cycle-slideshow, .cycle-prev, .cycle-next").show();
+		$(".rslides_container").hide();
+		}
+});
+
+
+$("#contactMe").click(function(e) {
+    $("html,body").scrollTo("#contactMeform" , 800);
+});
+	
+	$(".like").click(function(e) {
+		if($(this).hasClass("alreadyvoted")){
+			
+			
+       
+		}else{
+			$(this).addClass("alreadyvoted");
+			 //console.log($(this).attr("value"));
+			var slide = $(this).attr("value");
+			$.ajax({
+					
+						  type: "POST",			
+						  url: "vote.php?idfoto="+slide,
+						  //data: $("#contactForm").serialize(), //dataString,
+						  success: function(data) {
+							//alert(data);	
+							$("#vote-slide"+slide).text(data);	
+						  }
+					
+						 });
+				
+				}
+	
+	
+	});
+		
+	
+	
+});//end doc ready
+</script>
+  <!-- FlexSlider -->
+  <script type="text/javascript" defer="" src="js/flexslider.js"></script>
+  <script type="text/javascript">
+   $(window).load(function(){
+      $('.flexslider').flexslider({
+		animation: "fade",
+		
+      });
+    });
+	
+	
+  </script>
+
+  <!-- flexslider -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+
+  
+  </head><body>
+    
+ 
+<div id="header">
+    <div class="header_nav">
+    <ul style="position:relative; margin:0 auto">
+        <li class="me"><a href="javascript:;"></a></li>
+        <li class="spacer">
+        <p>Frank Rapacciuolo</p>
+      </li>
+        <li class="contact" id="contactMe"><a href="javascript:;"></a></li>
+      </ul>
+  </div>
+    <!--/span--> 
+  </div>
+<!--/container-->
+<div id="triangolo"><img type="" alt="" src="img/triangolo.png"></div>
+<div id="about" class="" style="height: 0px;">
+    <h1>About me</h1>
+    <p style="">I am Frank, a Milan based UI/UX Designer. I love to design User Interfaces for websites or mobile applications on any devices. Now I’m user interface designer consultant and my mission is to design user interfaces.</p>
+    <div class="skills"> <img src="img/skills.png"> </div>
+  </div>
+
+
+<!-- flexi -->
+<div style="max-width:990px; height:auto; margin:0 auto; padding-top:45px; overflow: hidden;">
+    <div class="flexslider">
+    <div id="flex-control-nav-container-1" class="flex-control-nav-container"></div>
+    
+    
+    
+    <ul class="slides">
+        <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;"><img type="" alt="" src="img/slide1.jpg">
+        <div class="span12">
+            <h6>Italian UI designers</h6>
+            <p>Index page of Italian UI designers project born from a facebook group that brings together the best UI Italian designers.</p>
+          </div>
+        <div class="slider_button">
+            <ul>
+            <li class="like" value="1"><a href="javascript:;" target="_self" id="slide1"></a></li>
+            <li class="link"><a href="http://dribbble.com/shots/881481-Italian-UI-designers-Index/attachments/95222" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide1" class="likevotes">
+		  791          </div>
+          </div>
+      </li>
+      
+      
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide2.jpg">
+        <div class="span12">
+            <h6>Italian UI designers</h6>
+            <p>Index and Profile page of Italian UI designers project born from a facebook group that brings together the best UI Italian designers.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="2"><a href="javascript:;" target="_self" id="slide2"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://dribbble.com/shots/940183-Page-Profile/attachments/105561" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide2" class="likevotes">
+		  113          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide3.jpg">
+        <div class="span12">
+            <h6>Italian UI designers</h6>
+            <p>"Logo" of Italian UI designers project born from a facebook group that brings together the best UI Italian designers.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="3"><a href="javascript:;" target="_self" id="slide3"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://dribbble.com/shots/872364-Italian-UI-Designers-Logo?list=users" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide3" class="likevotes">
+		  112          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide4.jpg">
+        <div class="span12">
+            <h6>Personal portfolio</h6>
+            <p>My personal portfolio in two views : desktop and responsive.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like " value="4"><a href="javascript:;" target="_self" id="slide4"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="javascript:;" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide4" class="likevotes">
+		  154          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide5.jpg">
+        <div class="span12">
+            <h6>Gaialuna precious</h6>
+            <p>Index page - Website of Italian fashion brand Gaialuna Precious.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="5"><a href="javascript:;" target="_self" id="slide5"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.gaialuna.eu" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide5" class="likevotes">
+		  74          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide6.jpg">
+        <div class="span12">
+            <h6>Gaialuna precious</h6>
+            <p>Home and Gallery - Website of Italian fashion brand Gaialuna Precious.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="6"><a href="javascript:;" target="_self" id="slide6"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.gaialuna.eu/en/home.html" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide6" class="likevotes">
+		  66          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide7.jpg">
+        <div class="span12">
+            <h6>FUBLES</h6>
+            <p>Fubles is a Social Network that helps you to find soccer games, teammates and venues nearby. I designed the entire interface.</p>
+          </div>
+        <div class="slider_button">
+            <ul>
+            <li class="like" value="7"><a href="javascript:;" target="_self" id="slide7"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.fubles.com/" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide7" class="likevotes">
+		  58          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide8.jpg">
+        <div class="span12">
+            <h6>FUBLES</h6>
+            <p>Fubles is a Social Network that helps you to find soccer games, teammates and venues nearby. I designed the entire interface.</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="8"><a href="javascript:;" target="_self" id="slide8"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.fubles.com/" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide8" class="likevotes">
+		  66          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide9.jpg">
+        <div class="span12">
+            <h6>FUBLES windows phone 8</h6>
+            <p>This is a concept of windows phone 8 app, available soon.</p>
+          </div>
+        <div class="slider_button">
+            <ul>
+            <li class="like" value="9"><a href="javascript:;" target="_self" id="slide9"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.behance.net/freesbie" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide9" class="likevotes">
+		  56          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide10.jpg">
+        <div class="span12">
+            <h6>Polytan</h6>
+            <p>Landing page of a project developed for fubles, I was in charge art direction and interface</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="10"><a href="javascript:;" target="_self" id="slide10"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://polytan.fubles.com/" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide10" class="likevotes">
+		  49          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide11.jpg">
+        <div class="span12">
+            <h6>Polytan</h6>
+            <p>Landing page of a project developed for fubles, I was in charge art direction and interface</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="11"><a href="javascript:;" target="_self" id="slide11"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://polytan.fubles.com/" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide11" class="likevotes">
+		  55          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide"> <img type="" alt="" src="img/slide12.jpg">
+        <div class="span12">
+            <h6>Kellogg's Extra League</h6>
+            <p>Landing page of a project developed for fubles, I was in charge art direction and interface</p>
+          </div>
+        <div class="slider_button ">
+            <ul>
+            <li class="like" value="12"><a href="javascript:;" target="_self" id="slide12"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.fubles.com/extra?utm_source=fubles&amp;utm_medium=header&amp;utm_campaign=kextra&amp;tabs=sidebar-ul,home" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide12" class="likevotes">
+		  44          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide13.jpg">
+        <div class="span12">
+            <h6>Kellogg's Extra League</h6>
+            <p>Landing page of a project developed for fubles, I was in charge art direction and interface</p>
+          </div>
+        <div class="slider_button">
+            <ul>
+            <li class="like" value="13"><a href="javascript:;" target="_self" id="slide13"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.fubles.com/extra?utm_source=fubles&amp;utm_medium=header&amp;utm_campaign=kextra&amp;tabs=sidebar-ul,home" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide13" class="likevotes">
+		  32          </div>
+          </div>
+      </li>
+        <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""> <img type="" alt="" src="img/slide14.jpg">
+        <div class="span12">
+            <h6>Kellogg's Extra League</h6>
+            <p>Landing page of a project developed for fubles, I was in charge art direction and interface</p>
+          </div>
+        <div class="slider_button">
+            <ul>
+            <li class="like" value="14"><a href="javascript:;" target="_self" id="slide13"></a></li>
+            <li class="link" style="padding-right:0px;"><a href="http://www.fubles.com/extra?utm_source=fubles&amp;utm_medium=header&amp;utm_campaign=kextra&amp;tabs=sidebar-ul,home" target="_self"></a></li>
+          </ul>
+          <div id="vote-slide14" class="likevotes">
+		  81          </div>
+          </div>
+      </li>
+      </ul>
+  <ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="">3</a></li><li><a class="">4</a></li><li><a class="">5</a></li><li><a class="">6</a></li><li><a class="">7</a></li><li><a class="">8</a></li><li><a class="">9</a></li><li><a class="">10</a></li><li><a class="">11</a></li><li><a class="flex-active">12</a></li><li><a class="">13</a></li><li><a class="">14</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
+  </div>
+<div class="row-fluid" style="max-width:1000px; margin:auto">
+    <div id="triangolo_up"><img type="" alt="" src="img/triangolo_up.png"></div>
+  </div>
+<!--/row-->
+
+
+<div class="container-fluid" style="background-color:#fc5242;">
+    <div class="row-fluid" style="max-width:1000px; margin:auto;">
+    <div class="hero-unit">
+        <h1>Recommendations</h1>
+        <div id="wrapper">
+        <div class="rslides_container" style="display: none; margin-top: 40px;">
+            <ul class="rslides centered-btns centered-btns1" id="slider1" style="max-width: 800px;">
+            <li id="centered-btns1_s0" class="centered-btns1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                <div> <img type="" alt="" src="img/avatar_mirko.png" style="">
+                <div class="ravatar">
+                    <p><strong>Mirko Trasciatti</strong> - CEO &amp; Co-founder at <a href="http://www.fubles.com">fubles.com</a></p>
+                  </div>
+                <br clear="all">
+                <p>" Working with Frank is both valuable and pleasant. He's been able to dive into the caotic and fast paced environment of a startup with unexpected attitude and enthusiasm. Frank does his best to see, listen, understand design and deliver what you have in mind or you whish you had. "</p>
+              </div>
+              </li>
+            <li id="centered-btns1_s1" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                <div> <img type="" alt="" src="img/avatar_antonio.png" style="">
+                <div class="ravatar">
+                    <p><strong>Antonio Trapani</strong> - Software Engineer at <a href="http://www.fubles.com">fubles.com</a></p>
+                  </div>
+                <br clear="all">
+                <p>" Frank owns excellent skills in UI and UX development. His abilities on creation of slick, modern, high-quality user interfaces, together with a strong team collaboration attitude, make him the perfect choice for all contemporary web and mobile products, both in tech startups and big companies. "</p>
+              </div>
+              </li>
+            <li id="centered-btns1_s2" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                <div> <img type="" alt="" src="img/avatar_rino.png" style="">
+                <div class="ravatar">
+                    <p><strong>Rino Platania</strong> - Founder &amp; Lead Designer at <a href="http://www.factoria.it">Factoria.it</a></p>
+                  </div>
+                <br clear="all">
+                <p>" Frank is a proactive, hard-working collaborator, his enthusiasm is a great addition to any work team. He always delivers his assignments on time, giving the work assigned a personal touch. I would highly recommend Frank, as he is the ideal collaborator for project and design position."</p>
+              </div>
+              </li>
+              <li id="centered-btns1_s3" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                <div> <img type="" alt="" src="img/avatar_michele.png" style="">
+                <div class="ravatar">
+                    <p><strong>Michele Iovino</strong> - User Experience Lead at <a href="http://www.webscience.it/">Webscience.it</a></p>
+                  </div>
+                <br clear="all">
+                <p>" Francesco is an excellent visual designer with an eye for detail, he is able to translate the interaction design work in the final interface by blending principles and trends, in agreement with the general vision of the project."</p>
+              </div>
+              </li>
+          </ul><a href="#" class="centered-btns_nav centered-btns1_nav prev"></a><a href="#" class="centered-btns_nav centered-btns1_nav next"></a>
+          </div>
+      </div>
+        <div style="position:relative; padding-bottom: 20px">
+        <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="90000" data-cycle-slides="> div"><div class="cycle-sentinel cycle-slide" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden; display: block;">
+            <div style="max-width: 103px; float: left; visibility: hidden;"><img type="" alt="" src="img/avatar_mirko.png" style="visibility: hidden;"></div>
+            <p style="visibility: hidden;"><strong style="visibility: hidden;">Mirko Trasciatti</strong> - CEO &amp; Co-founder at <a href="http://www.fubles.com" style="visibility: hidden;">fubles.com</a> </p>
+            <div style="visibility: hidden;">
+                <p style="visibility: hidden;">Working with Frank is both valuable and pleasant. He's been able to dive into the caotic and fast paced environment of a startup with unexpected attitude and enthusiasm. 
+                Frank does his best to see, listen, understand design and deliver what you have in mind or you whish you had.</p>
+              </div>
+          </div>
+            
+            
+            
+          <div class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; opacity: 0; display: none;">
+            <div style="max-width:103px; float:left;"><img type="" alt="" src="img/avatar_mirko.png"></div>
+            <p><strong>Mirko Trasciatti</strong> - CEO &amp; Co-founder at <a href="http://www.fubles.com">fubles.com</a> </p>
+            <div style="">
+                <p>Working with Frank is both valuable and pleasant. He's been able to dive into the caotic and fast paced environment of a startup with unexpected attitude and enthusiasm. 
+                Frank does his best to see, listen, understand design and deliver what you have in mind or you whish you had.</p>
+              </div>
+          </div><div class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 100; display: none; opacity: 0;">
+            <div style="max-width:103px; float:left;"><img type="" alt="" src="img/avatar_antonio.png"></div>
+            <div style="">
+                <p><strong>Antonio Trapani</strong> - Software Engineer at <a href="http://www.fubles.com">fubles.com</a></p>
+                <p>Frank owns excellent skills in UI and UX development. His abilities on creation of slick, modern, high-quality user interfaces, together with a strong team collaboration attitude, make him the perfect choice for all contemporary web and mobile products, both in tech startups and big companies.</p>
+              </div>
+          </div><div class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; display: block; opacity: 1;">
+            <div style="max-width:103px; float:left;"><img type="" alt="" src="img/avatar_rino.png"></div>
+            <div style="">
+                <p><strong>Rino Platania</strong> - Founder &amp; Lead Designer at <a href="http://www.factoria.it">Factoria.it</a></p>
+                <p>Frank is a proactive, hard-working collaborator, his enthusiasm is a great addition to any work team. He always delivers his assignments on time, giving the work assigned a personal touch. I would highly recommend Frank, as he is the ideal collaborator for project and design position.</p>
+              </div>
+          </div></div>
+        <br>
+        <div><a data-cycle-cmd="prev" href="#" class="cycle-prev"></a></div>
+        <div><a data-cycle-cmd="next" href="#" class="cycle-next"></a></div>
+      </div>
+      </div>
+  </div>
+    <!--/row-->
+    
+    <div class="row-fluid" style="max-width:1000px; margin:auto;">
+    <div class="hero-unit" style="border-top:2px solid #e54440" id="contactMeform">
+        <form name="contactForm" id="contactForm">
+        <h1 style="padding:20px 0 20px 0;">if you are interested<strong> to redesign your site or mobile app</strong>, you may CONTACT ME</h1>
+        <div class="row-fluid" style="padding-bottom:40px;">
+            <div class="span4">
+            <input class="name" id="nome" name="nome" type="text" placeholder="Name">
+            <input class="email" id="email" name="email" type="text" placeholder="Email">
+            <input class="subject" id="oggetto" name="oggetto" type="text" placeholder="Subject">
+            <input class="website" id="website" name="website" type="text" placeholder="Website">
+            <input id="dosubmit" name="dosubmit" type="hidden" value="true">
+          </div>
+            <!--/span-->
+            
+            <div class="span8">
+            <textarea rows="3" name="messaggio" id="messaggio" placeholder="Your message" style="width:100%; height:200px; padding:10px 0 0 10px"></textarea>
+            <li class="send"><a href="javascript:;" id="pulsante"></a></li>
+          </div>
+            
+            <!--/span--> 
+            
+          </div>
+        <!--/row-->
+      </form>
+      </div>
+    
+    <!--/span--> 
+  </div>
+    <!--/row-->
+    
+     <div class="row-fluid" style="max-width:1000px; margin:auto;">
+    <div class="hero-unit" style="border-top:2px solid #e54440">
+      <h1>A gift for you!</h1>
+      <div class="iphone"><h1 class="iphone">Flat3d iPHONE MOCKUP </h1></div>
+      <div class="span8 offset2"><img src="img/flat3D_iphone.png" width="580" height="414"></div>
+      <div style="max-width:161px; margin:auto;"><li class="downloadpsd"><a href="http://www.freesbie.it/resources/flat3d/"></a></li></div>
+      </div>
+    
+    <!--/span--> 
+  </div>
+    <!--/row-->
+    
+    
+    
+    
+    <div id="triangolo_up"><img type="" alt="" src="img/triangolo_footer.png"></div>
+  </div>
+<!--/row--> 
+
+<!--/contact-->
+
+<div class="container-fluid footer">
+    <div class="row-fluid" style="max-width:1000px; margin:auto"> </div>
+    <!--/row-->
+    
+    <div class="row-fluid" style="max-width:400px; margin:auto;">
+    <div class="span12 hero-unit">
+        <h1>Socialize</h1>
+        <div class="social_button span12">
+        <ul>
+            <li class="linkedin "><a href="http://it.linkedin.com/pub/Frank-rapacciuolo/26/683/6aa/en" target="_self"></a></li>
+            <li class="twitter "><a href="https://twitter.com/frankiefreesbie" target="_self"></a></li>
+            <li class="dribbble "><a href="http://dribbble.com/frankiefreesbie" target="_self"></a></li>
+            <li class="behance" style="padding-right:0px;"><a href="http://www.behance.net/freesbie" target="_self"></a></li>
+          </ul>
+      </div>
+      </div>
+    <!--/span--> 
+  </div>
+    <!--/row-->
+    <div class="row-fluid copy" style="max-width:1000px; margin:auto">
+    <div class="span12">
+        <p>Copyright © 2013 Frank Rapacciuolo</p>
+      </div>
+  </div>
+    <!--/row--> 
+    
+  </div>
+<!--/container--> 
+
+<script>
+$('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
+    // redirect cycle log onto the page
+    API.log = function() {
+       // $('#log').prepend('<div>' + Array.prototype.join.call(arguments, ' ') + '</div>');
+    }
+});
+
+$('.cycle-slideshow-mobile').on('cycle-bootstrap', function(e, opts, API) {
+    // redirect cycle log onto the page
+    API.log = function() {
+       // $('#log').prepend('<div>' + Array.prototype.join.call(arguments, ' ') + '</div>');
+    }
+});
+
+
+//send email
+
+$(document).ready(function(e) {
+    
+		$('input, textarea').bind('keyup', function() { 
+								
+						 	$(this).removeClass('errorform');
+								
+						});
+								
+						$("input").removeClass('errorform');
+								
+								 $("#pulsante").click(function(e) {
+										//alert("...");
+										// validate and process form
+								
+									$("input").removeClass('errorform');
+								
+										var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+								
+									  var nome = $("input#nome").val();
+								
+										if (nome == "") {
+								
+										  $("input#nome").addClass("errorform");
+								
+										  $("input#nome").focus();
+								
+										  return false;
+								
+										}
+								
+										var email = $("input#email").val();
+								
+										if (email == "") {
+								
+										  $("input#email").addClass("errorform");
+								
+										  $("input#email").focus();
+								
+										  return false;
+								
+										}else if(!emailRegex.test(email)) {
+								
+											///$("label#email_error").html("Digita un email valida.");
+								
+											$("input#email").addClass("errorform");
+								
+											$("input#email").focus();
+								
+											return false;
+								
+										}
+								
+										var oggetto = $("input#oggetto").val();
+								
+										if (oggetto == "") {
+								
+										  $("label#oggetto_error").show();
+								
+										  $("input#oggetto").focus();
+								
+										  return false;
+								
+										}
+										
+										
+								
+										var messaggio = $("textarea#messaggio").val();
+								
+										if (messaggio == "") {
+								
+										  $("textarea#messaggio").addClass("errorform");
+								
+										  $("textarea#messaggio").focus();
+								
+										  return false;
+								
+										}
+								
+										
+								
+									$.ajax({
+								
+									  type: "POST",
+								
+									  url: "invio.php",
+								
+									  data: $("#contactForm").serialize(), //dataString,
+								
+									  success: function(data) {
+								
+										//alert(data);
+								
+										$('#contactMeform').html("<div id='message_output'></div>");
+								
+										$('#message_output').html(data)
+								
+								//        .append(data)
+								
+										.hide()
+								
+										.fadeIn(1500, function() {
+								
+										  $('#message_output').append("");
+								
+										});
+								
+									  }
+								
+									 });
+								
+									return false;
+								
+							
+
+						
+                });
+
+
+
+});//end doc ready
+</script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21685382-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body></html>
