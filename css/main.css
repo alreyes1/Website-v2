@@ -1,0 +1,57 @@
+body{
+ background-color:#0DCFC7;
+}
+.rotateLetters{
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-9deg);
+  margin-left: 39%;
+  float: left;
+
+}
+.rhomboid {
+  width: 260px;
+  height: 50px;
+  background-color: #EEEEEF;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  margin-left: 25px;
+ }
+ .rhomboidTwo{
+  width: 290px;
+  height: 30px;
+  background-color: #EEEEEF;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  margin-left: -4px;
+ }
+ .rhomboidThree{
+  width: 160px;
+  height: 30px;
+  background-color: #EEEEEF;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  margin-left: 50px;
+ }
+ .name {
+  font-size: 30px;
+  color: #0DCFC7;
+  padding: 15px 15px 15px 25px;
+ }
+ .jobType{
+  font-size: 15px;
+  color: #0DCFC7;
+  padding: 10px 10px 10px 80px;
+ }
+ .porfolio{
+  font-size: 15px;
+  color: #0DCFC7;
+  padding: 10px 10px 10px 50px; 
+ }
