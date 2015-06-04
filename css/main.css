@@ -105,17 +105,58 @@ body{
  }
  .about	{
   width: 610px;
-  height: 150px;
+  height: 250px;
   font-family: 'Open Sans', sans-serif;
   color: white;
   margin: 0 auto;
+  padding-top: 5%;
  }
  .projects {
  	width: 100%;
- 	height: 400px;
+ 	height: 500px;
  	background-color: #EEEEEF
  }
  .projects h1 {
-  margin: 5px auto;
+  text-align: center;
   padding: 10% 45%;
+  color: gray;
  }
+ footer{
+ 	width: 100%;
+ 	height: 300px;
+ }
+ .social {
+  height: 94px;
+  padding-top: 41px;
+  margin-left: 45.5%;
+}
+ .social ul {
+  display: inline;
+}
+ .social li {
+  float: left;
+  list-style: none;
+  display: inline;
+  height: 84px;
+  width: 84px;
+  padding: 10px 1% 0 0;
+}
+ .social .linkedin a {
+  float: left;
+  background: url(../img/social_button.png) 0px 0px no-repeat;
+  height: 84px;
+  width: 84px;
+ }
+
+ .social .twitter a {
+  float: left;
+  background: url(../img/social_button.png) -336px 0px no-repeat;
+  height: 84px;
+  width: 84px;
+}
+footer h2{
+	  text-align: center;
+}
+footer p{
+	text-align: center;
+}
