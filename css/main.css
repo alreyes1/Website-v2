@@ -3,12 +3,10 @@ body{
  margin: auto;
 }
 .hero{
-	/*background: url(../img/subtle_dots.png);*/
-	/*background-color: #fc5242;*/
   height: 434px;
   width: 100%;
-
 }
+
 .rotateLetters{
    -webkit-transform: rotate(-7deg);
   -moz-transform: rotate(-7deg);
@@ -91,29 +89,29 @@ body{
   margin-right: -186px;
   margin-top: -50px;
 }
- .name {
+.name {
   font-size: 30px;
   color: #E05548;
-  padding: 15px 15px 15px 25px;
+  padding: 7px 15px 15px 25px;
   margin: 40px 0 0 0;
- }
- .jobType{
-  font-size: 15px;
+}
+.jobType {
+  font-size: 19px;
   color: #E05548;
-  padding: 10px 10px 10px 80px;
+  padding: 3px 0px 0px 66px;
   margin: 10px 0 10px 0;
- }
- .porfolio{
-  font-size: 15px;
+}
+.porfolio {
+  font-size: 19px;
   color: #E05548;
-  padding: 10px 10px 10px 50px; 
+  padding: 3px 0px 0px 33px;
   margin: 10px 0 0 0;
- }
+}
 .contact {
   height: 94px;
-  margin-left: -12%;
+  margin-left: -15%;
   float: left;
-  margin-top: 325px;
+  margin-top: 330px;
 }
  .contact ul {
   display: inline;
@@ -139,6 +137,29 @@ body{
   height: 84px;
   width: 84px;
 }
+.me {
+  font-size: 62px;
+  color: #FFFFFF;
+}
+
+.glyphicon {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62px;
+  color: #FFFFFF;
+}
+ .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
  .about	{
   background-color: #FFFFFF;
   width: 100%;
@@ -146,19 +167,22 @@ body{
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
   margin: 0 auto;
-  padding-top: 1%;
-    margin-top: 25px;
+  display: none;
+  float: left;
  }
- .aboutContainer{
- 	width: 500px;
- 	height: 250px;
- 	margin: 0 auto
- }
+.aboutContainer {
+  width: 500px;
+  height: 250px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
 .projects {
   width: 100%;
   height: 1000px;
   background-color: #EEEEEF;
-  margin-top: -22px;
+  margin-top: 0px;
+  float: left;
 }
  .projects h1 {
   text-align: center;
@@ -192,6 +216,7 @@ body{
  	height: 450px;
  	background-color: #2E3847;
  	margin-top: -20px;
+ 	float: left;
  }
  .social {
   height: 94px;
