@@ -84,7 +84,7 @@ body{
   -moz-transform: skew(65deg);
   -o-transform: skew(65deg);
   transform: skew(70deg);
-  margin-left: -14%;
+  margin-left: -10%;
 }
 .rhomboid2 {
   width: 56%;
@@ -95,7 +95,7 @@ body{
   -o-transform: skew(-65deg);
   transform: skew(-70deg);
   float: right;
-  margin-right: -15%;
+  margin-right: -12%;
   margin-top: -50px;
 }
 .name {
