@@ -84,7 +84,7 @@ body{
   -moz-transform: skew(65deg);
   -o-transform: skew(65deg);
   transform: skew(70deg);
-  margin-left: -9%;
+  margin-left: -16%;
 }
 .rhomboid2 {
   width: 56%;
@@ -124,27 +124,13 @@ body{
   width: 100%;
   padding-top: 30px;
 }
- .contact ul {
-  display: inline;
-}
 .contact li {
   float: left;
   list-style: none;
   display: inline;
   height: 72px;
   width: 44%;
-  padding: 0px 0 0 70px;
-}
-.contact .me a {
-  float: left;
-  height: 84px;
-  width: 84px;
- }
-
-.contact .email a {
-  float: left;
-  height: 84px;
-  width: 84px;
+  padding: 0px 0 0 40px;
 }
 .me {
   font-size: 62px;
