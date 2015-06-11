@@ -182,9 +182,9 @@ body{
   padding: 10% 45%;
   color: gray;
  }
- .carousel {
+.carousel {
   position: relative;
-  width: 100%;
+  width: 102%;
   margin-left: 0%;
 }
 .carousel-inner {
