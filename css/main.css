@@ -77,14 +77,14 @@ body{
   overflow: hidden;
 }
 .rhomboid1 {
-  width: 53%;
+  width: 65%;
   height: 50px;
   background-color: #FFFFFF;
   -webkit-transform: skew(65deg);
   -moz-transform: skew(65deg);
   -o-transform: skew(65deg);
   transform: skew(70deg);
-  margin-left: -10%;
+  margin-left: -9%;
 }
 .rhomboid2 {
   width: 56%;
