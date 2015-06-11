@@ -15,8 +15,6 @@ body{
   padding-left: 0;
   padding-right: 0;
 }
-
-
 .rotateLetters {
   -webkit-transform: rotate(-7deg);
   -moz-transform: rotate(-7deg);
@@ -27,7 +25,6 @@ body{
   margin-top: 0%;
   margin-bottom: 0%;
 }
-
 .rhomboid {
   width: 260px;
   height: 50px;
@@ -140,14 +137,12 @@ body{
 }
 .contact .me a {
   float: left;
-  /*background: url(../img/social_button.png) 0px 0px no-repeat;*/
   height: 84px;
   width: 84px;
  }
 
 .contact .email a {
   float: left;
-  /*background: url(../img/social_button.png) -336px 0px no-repeat;*/
   height: 84px;
   width: 84px;
 }
@@ -155,7 +150,6 @@ body{
   font-size: 62px;
   color: #FFFFFF;
 }
-
 .glyphicon {
   position: relative;
   top: 15px;
@@ -174,10 +168,10 @@ body{
   display: table;
   clear: both;
 }
- .about {
+.about {
   background-color: #FFFFFF;
   width: 100%;
-  height: 320px;
+  height: 250px;
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
   display: none;
@@ -185,12 +179,11 @@ body{
 }
 .aboutContainer {
   width: 88%;
-  height: 250px;
-  padding-top: 60px;
+  height: 240px;
+  padding-top: 15px;
   float: left;
   margin-left: 8%;
 }
-
 .projects {
   width: 100%;
   height: 250px;
@@ -254,7 +247,6 @@ footer {
   height: 84px;
   width: 84px;
  }
-
  .social .twitter a {
   float: left;
   background: url(../img/social_button.png) -336px 0px no-repeat;
@@ -270,5 +262,4 @@ footer p{
 	text-align: center;
 	color:#FFFFFF;
 	 margin: 65px 5px;
-
 }
