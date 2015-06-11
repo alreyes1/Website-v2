@@ -69,13 +69,13 @@ body{
   width: 217px;
   margin: -16% -31%;
  }
- .chevron{
+.chevron {
   background-color: #E05548;
   float: left;
   margin-top: 40px;
-  width: 100%;
+  width: 104%;
   overflow: hidden;
- }
+}
 .rhomboid1 {
   width: 53%;
   height: 50px;
@@ -223,7 +223,7 @@ body{
   margin-left: 14%;
 }
 footer {
-  width: 100%;
+  width: 104.3%;
   height: 361px;
   background-color: #2E3847;
   margin-top: 1px;
