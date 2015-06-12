@@ -520,7 +520,7 @@ footer p {
   margin-left: auto;
 }
 .hero {
-  height: 387px;
+  height: 391px;
   width: 100%;
 }
 .rotateLetters {
@@ -626,7 +626,7 @@ footer p {
 }
 .contact {
   height: 100px;
-  margin-left: 18%;
+  margin-left: 20%;
   float: left;
   margin-top: 10px;
   width: 74%;
@@ -635,10 +635,11 @@ footer p {
   float: left;
   list-style: none;
   display: inline;
-  height: 72px;
-  width: 44%;
-  padding: 0px 0px 0 40px;
-  margin-left: 25px;
+  height: 80px;
+  width: 25%;
+  padding: 0px 0px 0 10px;
+  margin-left: 40px;
+  margin-right: 72px;
 }
 .me {
   font-size: 62px;
@@ -680,7 +681,7 @@ footer p {
 }
 .projects {
   width: 103%;
-  height: 715px;
+  height: 627px;
   background-color: #EEEEEF;
   margin-top: 0px;
   float: left;
@@ -693,7 +694,7 @@ footer p {
 .carousel {
   position: relative;
   width: 102%;
-  height: 735px;
+  height: 630px;
 }
 .carousel-inner {
   position: relative;
@@ -733,7 +734,7 @@ footer {
 .social {
   height: 100px;
   padding-top: 20px;
-  margin-left: 38.5%;
+  margin-left: 35.5%;
 }
  .social li {
   float: left;
@@ -760,13 +761,13 @@ footer h2{
     color:#FFFFFF;
     padding-top: 50px;
 }
-footer p{
+footer p {
   text-align: center;
-  color:#FFFFFF;
-   margin: 65px 5px;
+  color: #FFFFFF;
+  margin: 60px 5px;
 }
  }
- 
+
 /* Medium devices (tablets, 1024px and up) ******************************************************************** */
 @media (min-width: 1024px) {
 .container-fluid {
