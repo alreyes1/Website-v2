@@ -222,7 +222,7 @@ footer {
   float: left;
 }
 .social {
-  height: 130px;
+  height: 115px;
   margin-left: 19.5%;
 }
  .social li {
@@ -250,10 +250,9 @@ footer h2 {
   color: #FFFFFF;
   padding-top: 10px;
 }
-footer p{
-	text-align: center;
-	color:#FFFFFF;
-	 margin: 65px 5px;
+footer p {
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Small devices (tablets, 667px and up) ******************************************************************** */
