@@ -267,7 +267,7 @@ footer p{
   margin-left: auto;
 }
 .hero {
-  height: 360px;
+  height: 350px;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -375,11 +375,11 @@ footer p{
 }
 .contact {
   height: 100px;
-  margin-left: 14%;
+  margin-left: 15%;
   float: left;
-  margin-top: 12px;
+  margin-top: 0px;
   width: 90%;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 .contact li {
   float: left;
@@ -482,7 +482,7 @@ footer {
 .social {
   height: 100px;
   padding-top: 0px;
-  margin-left: 37.5%;
+  margin-left: 32.5%;
 }
  .social li {
   float: left;
@@ -509,10 +509,10 @@ footer h2{
     color:#FFFFFF;
     padding-top: 50px;
 }
-footer p{
+footer p {
   text-align: center;
-  color:#FFFFFF;
-   margin: 65px 5px;
+  color: #FFFFFF;
+  margin: 25px 0px;
 }
  }
 
