@@ -172,9 +172,8 @@ body{
 }
 .projects {
   width: 100%;
-  height: 250px;
+  height: 270px;
   background-color: #EEEEEF;
-  margin-top: 0px;
   float: left;
 }
  .projects h1 {
@@ -190,7 +189,7 @@ body{
 .carousel-inner {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 270px;
   overflow: hidden;
 }
 .carousel-inner>.item {
@@ -218,14 +217,13 @@ body{
 }
 footer {
   width: 100%;
-  height: 361px;
+  height: 240px;
   background-color: #2E3847;
   float: left;
 }
 .social {
-  height: 95px;
-  padding-top: 29px;
-  margin-left: 26.5%;
+  height: 130px;
+  margin-left: 19.5%;
 }
  .social li {
   float: left;
@@ -247,10 +245,10 @@ footer {
   height: 84px;
   width: 84px;
 }
-footer h2{
-	  text-align: center;
-	  color:#FFFFFF;
-	  padding-top: 50px;
+footer h2 {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 10px;
 }
 footer p{
 	text-align: center;
@@ -481,7 +479,6 @@ footer {
 }
 .social {
   height: 100px;
-  padding-top: 0px;
   margin-left: 32.5%;
 }
  .social li {
