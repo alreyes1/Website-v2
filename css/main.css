@@ -217,10 +217,10 @@ body{
   opacity: 0;
 }
 footer {
-  width: 104.3%;
+  width: 100%;
   height: 361px;
   background-color: #2E3847;
-  margin-top: 1px;
+  /*margin-top: 1px;*/
   float: left;
 }
 .social {
