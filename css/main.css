@@ -330,7 +330,7 @@ footer p{
   background-color: #E05548;
   float: left;
   margin-top: 30px;
-  width: 100%;
+  width: 715px;
   overflow: hidden;
 }
 .rhomboid1 {
@@ -413,7 +413,7 @@ footer p{
 }
 .about {
   background-color: #FFFFFF;
-  width: 100%;
+  width: 715px;
   height: 190px;
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
@@ -425,11 +425,11 @@ footer p{
   height: 165px;
   padding-top: 0px;
   float: left;
-  margin-left: 8%;
+  margin-left: 10%;
 }
 .projects {
   width: 100%;
-  height: 350px;
+  height: 465px;
   background-color: #EEEEEF;
   margin-top: 0px;
   float: left;
@@ -441,13 +441,13 @@ footer p{
  }
 .carousel {
   position: relative;
-  width: 682px;
+  width: 700px;
   height: 349px;
 }
 .carousel-inner {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 465px;
   overflow: hidden;
 }
 .carousel-inner>.item {
