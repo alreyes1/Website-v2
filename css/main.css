@@ -521,19 +521,17 @@ footer p {
   margin-left: auto;
 }
 .hero {
-  height: 360px;
+  height: 387px;
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
 }
 .rotateLetters {
   -webkit-transform: rotate(-7deg);
   -moz-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
   transform: rotate(-7deg);
-  margin-left: 8%;
+  margin-left: 18%;
   float: left;
-  margin-top: 0%;
+  margin-top: 1%;
   margin-bottom: 0%;
 }
 .rhomboid {
@@ -570,7 +568,7 @@ footer p {
   width: 150px;
   height: 160px;
   float: left;
-  margin: 23px 0px 0px 71px;
+  margin: 42px 0px 0px -25px;
   overflow: hidden;
   border: 4px solid #FFFFFF;
   border-radius: 30px;
@@ -584,7 +582,7 @@ footer p {
   background-color: #E05548;
   float: left;
   margin-top: 30px;
-  width: 100%;
+  width: 103%;
   overflow: hidden;
 }
 .rhomboid1 {
@@ -629,11 +627,10 @@ footer p {
 }
 .contact {
   height: 100px;
-  margin-left: 14%;
+  margin-left: 25%;
   float: left;
-  margin-top: 12px;
-  width: 90%;
-  padding-top: 25px;
+  margin-top: 10px;
+  width: 74%;
 }
 .contact li {
   float: left;
@@ -667,8 +664,8 @@ footer p {
 }
 .about {
   background-color: #FFFFFF;
-  width: 100%;
-  height: 190px;
+  width: 103%;
+  height: 175px;
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
   display: none;
@@ -677,13 +674,13 @@ footer p {
 .aboutContainer {
   width: 88%;
   height: 165px;
-  padding-top: 0px;
   float: left;
-  margin-left: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .projects {
   width: 100%;
-  height: 350px;
+  height: 715px;
   background-color: #EEEEEF;
   margin-top: 0px;
   float: left;
@@ -695,13 +692,13 @@ footer p {
  }
 .carousel {
   position: relative;
-  width: 682px;
-  height: 349px;
+  width: 1070px;
+  height: 735px;
 }
 .carousel-inner {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 734px;
   overflow: hidden;
 }
 .carousel-inner>.item {
@@ -728,15 +725,15 @@ footer p {
   opacity: 0;
 }
 footer {
-  width: 100%;
-  height: 361px;
+  width: 103%;
+  height: 362px;
   background-color: #2E3847;
   float: left;
 }
 .social {
   height: 100px;
-  padding-top: 0px;
-  margin-left: 37.5%;
+  padding-top: 20px;
+  margin-left: 38.5%;
 }
  .social li {
   float: left;
