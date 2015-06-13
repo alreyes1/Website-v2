@@ -5,4 +5,10 @@ $(document).on('ready', function(){
 	  $('.about').slideToggle("slow");
 
     });
+
+    $('.email').click(function(){
+	  $(this).toggleClass('open');
+	  $('.mail').slideToggle("slow");
+
+    });
 });
