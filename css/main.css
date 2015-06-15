@@ -7,7 +7,6 @@ body{
   padding-left: 0px; 
   margin-right: auto;
   margin-left: auto;
-
 }
 .hero {
   height: 525px;
@@ -181,6 +180,9 @@ body{
 }
 textarea.form-control {
   height: auto;
+  margin-bottom: 10px;
+}
+.form-control {
   margin-bottom: 10px;
 }
 .mailContainer {
