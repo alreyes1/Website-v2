@@ -1140,7 +1140,7 @@ footer p{
  .rhomboidTwo{
   width: 290px;
   height: 30px;
- background-color: #FFFFFF;
+  background-color: #FFFFFF;
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
@@ -1264,6 +1264,7 @@ footer p{
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
   float: left;
+  display: block;
 }
 .aboutContainer {
   width: 76%;
@@ -1279,6 +1280,7 @@ footer p{
   font-family: 'Open Sans', sans-serif;
   color: #2E3847;
   float: left;
+  display: block;
 }
 textarea.form-control {
   height: auto;
